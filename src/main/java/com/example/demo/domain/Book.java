@@ -7,17 +7,19 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-
+@Entity
 public class Book {
-
+    @Id
+    @GeneratedValue (strategy = GenerationType.AUTO)
     private String ISBN;
+
     private String BookName;
     private String Category;
     @ManyToMany(mappedBy = "Books")
     private Set<Author> Author = new HashSet<>();
     private int Quantity;
 
-    public Book(String ISBN, String bookName, String category, String publicationDate, int quantity) {
+    public Book(String ISBN, String bookName, String category, int quantity) {
         this.ISBN = ISBN;
         BookName = bookName;
         Category = category;
