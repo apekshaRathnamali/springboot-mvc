@@ -19,7 +19,7 @@ public class Data implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+/*
         Author jacob = new Author( 001, "Jacob","Wikings" );
         Book twilight = new Book( "2626575","Twilight","Novel",20 );
         jacob.getBooks().add( twilight );
@@ -38,6 +38,8 @@ public class Data implements CommandLineRunner {
 
         System.out.println("Started in bootstrap...");
         System.out.println("Number of books: "+ bookRepository.count());
+
+ */
 
     }
 }
