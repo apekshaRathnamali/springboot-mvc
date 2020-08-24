@@ -19,6 +19,10 @@ public class Book {
     private Set<Author> Author = new HashSet<>();
     private int Quantity;
 
+    public Book() {
+
+    }
+
     public Book(String ISBN, String bookName, String category, int quantity) {
         this.ISBN = ISBN;
         BookName = bookName;
