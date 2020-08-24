@@ -12,7 +12,7 @@ public class Author {
     private int AuthorId;
     private String AuthorFirstName;
     private String AuthorLastName;
-    @ManyToMany
+    @OneToMany
     @JoinTable(name = "author_book", joinColumns = @JoinColumn(name = "ISBN"), inverseJoinColumns = @JoinColumn(name = "AuthorId"))
     private Set<Book> Books = new HashSet<>();
 
